@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA95248FF57700161151 /* AppDelegate.swift */; };
 		55F3FA98248FF57700161151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA97248FF57700161151 /* SceneDelegate.swift */; };
-		55F3FA9A248FF57700161151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA99248FF57700161151 /* ViewController.swift */; };
+		55F3FA9A248FF57700161151 /* TarkovKeybarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA99248FF57700161151 /* TarkovKeybarViewController.swift */; };
 		55F3FA9D248FF57700161151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FA9B248FF57700161151 /* Main.storyboard */; };
 		55F3FAA0248FF57700161151 /* TarkovKeybar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA9E248FF57700161151 /* TarkovKeybar.xcdatamodeld */; };
 		55F3FAA2248FF57800161151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAA1248FF57800161151 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		55F3FA92248FF57700161151 /* TarkovKeybar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarkovKeybar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F3FA95248FF57700161151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F3FA97248FF57700161151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55F3FA99248FF57700161151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55F3FA99248FF57700161151 /* TarkovKeybarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarkovKeybarViewController.swift; sourceTree = "<group>"; };
 		55F3FA9C248FF57700161151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F3FA9F248FF57700161151 /* TarkovKeybar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TarkovKeybar.xcdatamodel; sourceTree = "<group>"; };
 		55F3FAA1248FF57800161151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				55F3FA95248FF57700161151 /* AppDelegate.swift */,
 				55F3FA97248FF57700161151 /* SceneDelegate.swift */,
-				55F3FA99248FF57700161151 /* ViewController.swift */,
+				55F3FA99248FF57700161151 /* TarkovKeybarViewController.swift */,
 				55F3FA9B248FF57700161151 /* Main.storyboard */,
 				55F3FAA1248FF57800161151 /* Assets.xcassets */,
 				55F3FAA3248FF57800161151 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F3FA9A248FF57700161151 /* ViewController.swift in Sources */,
+				55F3FA9A248FF57700161151 /* TarkovKeybarViewController.swift in Sources */,
 				55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */,
 				55F3FAA0248FF57700161151 /* TarkovKeybar.xcdatamodeld in Sources */,
 				55F3FA98248FF57700161151 /* SceneDelegate.swift in Sources */,
