@@ -14,6 +14,16 @@
 		55F3FAA0248FF57700161151 /* TarkovKeybar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA9E248FF57700161151 /* TarkovKeybar.xcdatamodeld */; };
 		55F3FAA2248FF57800161151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAA1248FF57800161151 /* Assets.xcassets */; };
 		55F3FAA5248FF57800161151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAA3248FF57800161151 /* LaunchScreen.storyboard */; };
+		55F3FAEF2491657600161151 /* LocationTableVeiwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FAEE2491657600161151 /* LocationTableVeiwCell.swift */; };
+		55F3FAF12491688A00161151 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FAF02491688A00161151 /* Location.swift */; };
+		55F3FAFA2491736C00161151 /* Jovanny Lemonad - Bender-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF22491736C00161151 /* Jovanny Lemonad - Bender-Light.otf */; };
+		55F3FAFB2491736C00161151 /* Jovanny Lemonad - Bender-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF32491736C00161151 /* Jovanny Lemonad - Bender-Black.otf */; };
+		55F3FAFC2491736C00161151 /* Bender.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF42491736C00161151 /* Bender.otf */; };
+		55F3FAFD2491736C00161151 /* Jovanny Lemonad - Bender-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF52491736C00161151 /* Jovanny Lemonad - Bender-BoldItalic.otf */; };
+		55F3FAFE2491736C00161151 /* Jovanny Lemonad - Bender-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF62491736C00161151 /* Jovanny Lemonad - Bender-Italic.otf */; };
+		55F3FAFF2491736C00161151 /* Jovanny Lemonad - Bender-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF72491736C00161151 /* Jovanny Lemonad - Bender-BlackItalic.otf */; };
+		55F3FB002491736C00161151 /* Jovanny Lemonad - Bender-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF82491736C00161151 /* Jovanny Lemonad - Bender-Bold.otf */; };
+		55F3FB012491736C00161151 /* Jovanny Lemonad - Bender-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3FAF92491736C00161151 /* Jovanny Lemonad - Bender-LightItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		55F3FAA1248FF57800161151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F3FAA4248FF57800161151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F3FAA6248FF57800161151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F3FAEE2491657600161151 /* LocationTableVeiwCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableVeiwCell.swift; sourceTree = "<group>"; };
+		55F3FAF02491688A00161151 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		55F3FAF22491736C00161151 /* Jovanny Lemonad - Bender-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-Light.otf"; sourceTree = "<group>"; };
+		55F3FAF32491736C00161151 /* Jovanny Lemonad - Bender-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-Black.otf"; sourceTree = "<group>"; };
+		55F3FAF42491736C00161151 /* Bender.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bender.otf; sourceTree = "<group>"; };
+		55F3FAF52491736C00161151 /* Jovanny Lemonad - Bender-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-BoldItalic.otf"; sourceTree = "<group>"; };
+		55F3FAF62491736C00161151 /* Jovanny Lemonad - Bender-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-Italic.otf"; sourceTree = "<group>"; };
+		55F3FAF72491736C00161151 /* Jovanny Lemonad - Bender-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-BlackItalic.otf"; sourceTree = "<group>"; };
+		55F3FAF82491736C00161151 /* Jovanny Lemonad - Bender-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-Bold.otf"; sourceTree = "<group>"; };
+		55F3FAF92491736C00161151 /* Jovanny Lemonad - Bender-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jovanny Lemonad - Bender-LightItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +78,12 @@
 		55F3FA94248FF57700161151 /* TarkovKeybar */ = {
 			isa = PBXGroup;
 			children = (
+				55F3FADB2491594D00161151 /* fonts */,
 				55F3FA95248FF57700161151 /* AppDelegate.swift */,
 				55F3FA97248FF57700161151 /* SceneDelegate.swift */,
 				55F3FA99248FF57700161151 /* TarkovKeybarViewController.swift */,
+				55F3FAEE2491657600161151 /* LocationTableVeiwCell.swift */,
+				55F3FAF02491688A00161151 /* Location.swift */,
 				55F3FA9B248FF57700161151 /* Main.storyboard */,
 				55F3FAA1248FF57800161151 /* Assets.xcassets */,
 				55F3FAA3248FF57800161151 /* LaunchScreen.storyboard */,
@@ -68,6 +91,21 @@
 				55F3FA9E248FF57700161151 /* TarkovKeybar.xcdatamodeld */,
 			);
 			path = TarkovKeybar;
+			sourceTree = "<group>";
+		};
+		55F3FADB2491594D00161151 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55F3FAF42491736C00161151 /* Bender.otf */,
+				55F3FAF32491736C00161151 /* Jovanny Lemonad - Bender-Black.otf */,
+				55F3FAF72491736C00161151 /* Jovanny Lemonad - Bender-BlackItalic.otf */,
+				55F3FAF82491736C00161151 /* Jovanny Lemonad - Bender-Bold.otf */,
+				55F3FAF52491736C00161151 /* Jovanny Lemonad - Bender-BoldItalic.otf */,
+				55F3FAF62491736C00161151 /* Jovanny Lemonad - Bender-Italic.otf */,
+				55F3FAF22491736C00161151 /* Jovanny Lemonad - Bender-Light.otf */,
+				55F3FAF92491736C00161151 /* Jovanny Lemonad - Bender-LightItalic.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +166,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F3FAFD2491736C00161151 /* Jovanny Lemonad - Bender-BoldItalic.otf in Resources */,
+				55F3FAFA2491736C00161151 /* Jovanny Lemonad - Bender-Light.otf in Resources */,
+				55F3FB012491736C00161151 /* Jovanny Lemonad - Bender-LightItalic.otf in Resources */,
+				55F3FB002491736C00161151 /* Jovanny Lemonad - Bender-Bold.otf in Resources */,
+				55F3FAFF2491736C00161151 /* Jovanny Lemonad - Bender-BlackItalic.otf in Resources */,
 				55F3FAA5248FF57800161151 /* LaunchScreen.storyboard in Resources */,
 				55F3FAA2248FF57800161151 /* Assets.xcassets in Resources */,
+				55F3FAFC2491736C00161151 /* Bender.otf in Resources */,
+				55F3FAFB2491736C00161151 /* Jovanny Lemonad - Bender-Black.otf in Resources */,
 				55F3FA9D248FF57700161151 /* Main.storyboard in Resources */,
+				55F3FAFE2491736C00161151 /* Jovanny Lemonad - Bender-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +189,9 @@
 			files = (
 				55F3FA9A248FF57700161151 /* TarkovKeybarViewController.swift in Sources */,
 				55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */,
+				55F3FAEF2491657600161151 /* LocationTableVeiwCell.swift in Sources */,
 				55F3FAA0248FF57700161151 /* TarkovKeybar.xcdatamodeld in Sources */,
+				55F3FAF12491688A00161151 /* Location.swift in Sources */,
 				55F3FA98248FF57700161151 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

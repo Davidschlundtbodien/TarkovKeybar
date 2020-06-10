@@ -5,23 +5,47 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jovanny Lemonad - Bender-Black.otf">
+            <string>Bender-Black</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tarkov Keybar View Controller-->
         <scene sceneID="ZRr-PI-6Dl">
             <objects>
                 <tableViewController id="lws-Dr-2mR" customClass="TarkovKeybarViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3E9-7v-9sF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3E9-7v-9sF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapLocationCell" id="LQn-J6-Q7P">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapLocationCell" rowHeight="80" id="LQn-J6-Q7P" customClass="LocationTableViewCell" customModule="TarkovKeybar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LQn-J6-Q7P" id="6Ug-3a-ReZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0N-K7-wtn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <fontDescription key="fontDescription" name="Bender-Black" family="Bender" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="a0N-K7-wtn" firstAttribute="top" secondItem="6Ug-3a-ReZ" secondAttribute="top" id="Kb0-Mu-Ymv"/>
+                                        <constraint firstAttribute="bottom" secondItem="a0N-K7-wtn" secondAttribute="bottom" id="o8U-Zy-qUf"/>
+                                        <constraint firstItem="a0N-K7-wtn" firstAttribute="leading" secondItem="6Ug-3a-ReZ" secondAttribute="leading" id="sMF-gY-oQ4"/>
+                                        <constraint firstAttribute="trailing" secondItem="a0N-K7-wtn" secondAttribute="trailing" id="svM-ih-gOh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="LocationLabel" destination="a0N-K7-wtn" id="lSI-Ib-Yc0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

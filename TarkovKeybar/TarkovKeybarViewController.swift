@@ -10,22 +10,31 @@ import UIKit
 
 class TarkovKeybarViewController: UITableViewController {
     
-    let locationArray = ["Shoreline", "Factory", "Customs", "Interchange", "Labs", "Woods", "Reserve"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
 
+
+    }
+    
+    var locations: [Location] = Location.fetchLocationNames()
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return locationArray.count
+        return locations.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MapLocationCell", for: indexPath)
-        cell.textLabel?.text = locationArray[indexPath.row]
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MapLocationCell", for: indexPath) as! LocationTableViewCell
+        let location = locations[indexPath.row]
+        cell.location = location
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+                
     }
 }
 
