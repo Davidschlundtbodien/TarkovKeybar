@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TarkovKeybarViewController: UITableViewController {
+class TarkovKeybarTableViewController: UITableViewController {
     
     
     
@@ -34,7 +34,15 @@ class TarkovKeybarViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
+                performSegue(withIdentifier: "goToKeys", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! LocationKeysTableViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.location = locations[indexPath.row]
+        }
     }
 }
 

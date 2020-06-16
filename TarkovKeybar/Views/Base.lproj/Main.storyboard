@@ -19,10 +19,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Tarkov Keybar View Controller-->
+        <!--Locations-->
         <scene sceneID="ZRr-PI-6Dl">
             <objects>
-                <tableViewController id="lws-Dr-2mR" customClass="TarkovKeybarViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="lws-Dr-2mR" customClass="TarkovKeybarTableViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3E9-7v-9sF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,12 @@
                             <outlet property="delegate" destination="lws-Dr-2mR" id="j2e-n2-11j"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oZs-WH-CHM"/>
+                    <navigationItem key="navigationItem" title="Locations" id="oZs-WH-CHM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jcS-Pf-SAK"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="oqH-hZ-pfL" kind="show" identifier="goToKeys" id="onR-ps-psf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moC-n5-Xvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,7 +82,11 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -88,30 +97,30 @@
             </objects>
             <point key="canvasLocation" x="1001.4492753623189" y="136.60714285714286"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Location Keys Table View Controller-->
         <scene sceneID="i3c-dm-6bF">
             <objects>
-                <tableViewController id="oqH-hZ-pfL" sceneMemberID="viewController">
+                <tableViewController id="oqH-hZ-pfL" userLabel="Location Keys Table View Controller" customClass="LocationKeysTableViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ep-Ih-YUO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="YQR-D1-H2e">
-                                <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="KeyCell" rowHeight="80" id="YQR-D1-H2e" customClass="KeyTableViewCell" customModule="TarkovKeybar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YQR-D1-H2e" id="P2x-zG-mM7">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w3y-71-it6">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="75"/>
+                                        <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w3y-71-it6">
+                                            <rect key="frame" x="40" y="0.0" width="334" height="80"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="San203icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yvz-rK-Dua">
-                                                    <rect key="frame" x="0.0" y="5.5" width="53.5" height="64"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="San203icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yvz-rK-Dua">
+                                                    <rect key="frame" x="0.0" y="8" width="64" height="64"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West wing room 203 key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWD-xE-gC8">
-                                                    <rect key="frame" x="61.5" y="26.5" width="312.5" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="West wing room 203 key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWD-xE-gC8">
+                                                    <rect key="frame" x="167" y="18" width="167" height="44.5"/>
                                                     <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="20"/>
                                                     <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -122,11 +131,15 @@
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="w3y-71-it6" secondAttribute="bottom" id="CVy-du-E3j"/>
                                         <constraint firstItem="w3y-71-it6" firstAttribute="top" secondItem="P2x-zG-mM7" secondAttribute="top" id="J3d-U2-lpO"/>
-                                        <constraint firstItem="w3y-71-it6" firstAttribute="leading" secondItem="P2x-zG-mM7" secondAttribute="leading" constant="20" id="gRF-Xv-Tmm"/>
-                                        <constraint firstAttribute="trailing" secondItem="w3y-71-it6" secondAttribute="trailing" constant="20" id="hkE-zZ-4Lm"/>
+                                        <constraint firstItem="w3y-71-it6" firstAttribute="leading" secondItem="P2x-zG-mM7" secondAttribute="leading" constant="40" id="gRF-Xv-Tmm"/>
+                                        <constraint firstAttribute="trailing" secondItem="w3y-71-it6" secondAttribute="trailing" constant="40" id="hkE-zZ-4Lm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="KeyImage" destination="Yvz-rK-Dua" id="NXw-ZA-EUK"/>
+                                    <outlet property="KeyLabel" destination="lWD-xE-gC8" id="XU0-Nq-RaX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -134,30 +147,36 @@
                             <outlet property="delegate" destination="oqH-hZ-pfL" id="bsp-z3-sPA"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Shoreline" id="qic-Hl-Ftg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="1hr-tB-RIS"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="hYI-Ly-kca" kind="show" identifier="goToKeyDetail" id="5D9-W8-vMT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09e-D1-fjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2652.1739130434785" y="136.60714285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Shoreline-->
         <scene sceneID="GQy-zJ-Tav">
             <objects>
-                <viewController id="hYI-Ly-kca" sceneMemberID="viewController">
+                <viewController id="hYI-Ly-kca" customClass="KeyInformationViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GrQ-l8-K8J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="h13-u8-3wa">
-                                <rect key="frame" x="0.0" y="64" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="734"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ela-ZT-aJk">
-                                        <rect key="frame" x="45.5" y="0.0" width="323.5" height="96"/>
+                                        <rect key="frame" x="45.5" y="0.0" width="323.5" height="90.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="San203icon" translatesAutoresizingMaskIntoConstraints="NO" id="VIq-7r-7h9">
-                                                <rect key="frame" x="0.0" y="16" width="64" height="64"/>
+                                                <rect key="frame" x="0.0" y="13.5" width="64" height="64"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West wing room 203 key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11v-gG-xCm">
-                                                <rect key="frame" x="92" y="37" width="231.5" height="22.5"/>
+                                                <rect key="frame" x="92" y="34" width="231.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="20"/>
                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -165,7 +184,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-T2-j8p">
-                                        <rect key="frame" x="20" y="104" width="374" height="674"/>
+                                        <rect key="frame" x="20" y="98.5" width="374" height="635.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-m1-Dc4">
                                                 <rect key="frame" x="133" y="0.0" width="108" height="22.5"/>
@@ -243,7 +262,7 @@ One Sport bag</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Connected to room 205 through the balcony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yff-Gh-idD">
-                                                <rect key="frame" x="29.5" y="523.5" width="315" height="150.5"/>
+                                                <rect key="frame" x="29.5" y="523.5" width="315" height="112"/>
                                                 <fontDescription key="fontDescription" name="Bender-Light" family="Bender" pointSize="16"/>
                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -266,6 +285,7 @@ One Sport bag</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PDA-ZF-W42"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Shoreline" id="q96-lD-owq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0l-3j-JsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
