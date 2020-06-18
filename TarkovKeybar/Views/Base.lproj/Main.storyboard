@@ -63,7 +63,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Locations" id="oZs-WH-CHM">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="jcS-Pf-SAK"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="jcS-Pf-SAK"/>
                     </navigationItem>
                     <connections>
                         <segue destination="oqH-hZ-pfL" kind="show" identifier="goToKeys" id="onR-ps-psf"/>
@@ -85,6 +85,7 @@
                         <color key="tintColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="24"/>
                             <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -147,8 +148,8 @@
                             <outlet property="delegate" destination="oqH-hZ-pfL" id="bsp-z3-sPA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Shoreline" id="qic-Hl-Ftg">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="1hr-tB-RIS"/>
+                    <navigationItem key="navigationItem" title="Location" id="qic-Hl-Ftg">
+                        <barButtonItem key="backBarButtonItem" title=" " id="1hr-tB-RIS"/>
                     </navigationItem>
                     <connections>
                         <segue destination="hYI-Ly-kca" kind="show" identifier="goToKeyDetail" id="5D9-W8-vMT"/>
@@ -158,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="2652.1739130434785" y="136.60714285714286"/>
         </scene>
-        <!--Shoreline-->
+        <!--Location-->
         <scene sceneID="GQy-zJ-Tav">
             <objects>
                 <viewController id="hYI-Ly-kca" customClass="KeyInformationViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
@@ -285,7 +286,17 @@ One Sport bag</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PDA-ZF-W42"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Shoreline" id="q96-lD-owq"/>
+                    <navigationItem key="navigationItem" title="Location" id="q96-lD-owq"/>
+                    <connections>
+                        <outlet property="CommentsLabel" destination="Yff-Gh-idD" id="K3Z-C7-zaI"/>
+                        <outlet property="DescriptionLabel" destination="3Wz-15-fNV" id="BFv-hi-W8x"/>
+                        <outlet property="ImageLabel" destination="VIq-7r-7h9" id="Bm4-4f-F2L"/>
+                        <outlet property="KeyOpensLabel" destination="t0B-8S-z2d" id="Qpe-DJ-Kgh"/>
+                        <outlet property="LocationLabel" destination="SoK-wP-1cK" id="N55-Ns-Sfi"/>
+                        <outlet property="LootLabel" destination="s0L-3f-15F" id="rzS-Um-Sfu"/>
+                        <outlet property="NameLabel" destination="11v-gG-xCm" id="XoN-cF-nwH"/>
+                        <outlet property="QuestLabel" destination="Rej-nH-4va" id="Ht4-cQ-xhq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0l-3j-JsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

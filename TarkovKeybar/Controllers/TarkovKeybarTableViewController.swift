@@ -34,7 +34,7 @@ class TarkovKeybarTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                performSegue(withIdentifier: "goToKeys", sender: self)
+            performSegue(withIdentifier: "goToKeys", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

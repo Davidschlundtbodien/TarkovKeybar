@@ -14,14 +14,14 @@ class KeyTableViewCell: UITableViewCell {
     
     @IBOutlet weak var KeyLabel: UILabel!
     
-    var keyCell : KeyCell! {
+    var key : Key! {
         didSet {
             updateUI()
         }
     }
     
     func updateUI() {
-        KeyLabel.text = keyCell.name
-        KeyImage.image = UIImage(named: keyCell.image)
+        KeyLabel.text = key.name
+        KeyImage.image = UIImage(named: key.image)
     }
 }
