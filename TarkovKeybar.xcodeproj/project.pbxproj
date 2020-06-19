@@ -27,7 +27,9 @@
 		55F3FB0624991DFA00161151 /* LocationKeysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB0524991DFA00161151 /* LocationKeysTableViewController.swift */; };
 		55F3FB0824991E3400161151 /* KeyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB0724991E3400161151 /* KeyInformationViewController.swift */; };
 		55F3FB0A2499201300161151 /* KeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB092499201300161151 /* KeyTableViewCell.swift */; };
-		55F3FB0E249A721D00161151 /* KeyInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB0D249A721D00161151 /* KeyInformation.swift */; };
+		55F3FB0E249A721D00161151 /* KeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB0D249A721D00161151 /* KeyModel.swift */; };
+		55F3FB13249BF61100161151 /* ShorelineExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB12249BF61100161151 /* ShorelineExtension.swift */; };
+		55F3FB15249C01C900161151 /* FactoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FB14249C01C900161151 /* FactoryExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +55,9 @@
 		55F3FB0524991DFA00161151 /* LocationKeysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationKeysTableViewController.swift; sourceTree = "<group>"; };
 		55F3FB0724991E3400161151 /* KeyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInformationViewController.swift; sourceTree = "<group>"; };
 		55F3FB092499201300161151 /* KeyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTableViewCell.swift; sourceTree = "<group>"; };
-		55F3FB0D249A721D00161151 /* KeyInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInformation.swift; sourceTree = "<group>"; };
+		55F3FB0D249A721D00161151 /* KeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyModel.swift; sourceTree = "<group>"; };
+		55F3FB12249BF61100161151 /* ShorelineExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorelineExtension.swift; sourceTree = "<group>"; };
+		55F3FB14249C01C900161151 /* FactoryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				55F3FAF02491688A00161151 /* Location.swift */,
-				55F3FB0D249A721D00161151 /* KeyInformation.swift */,
+				55F3FB0D249A721D00161151 /* KeyModel.swift */,
 				55F3FB0F249A82E900161151 /* keys */,
 			);
 			path = Models;
@@ -148,6 +152,8 @@
 		55F3FB0F249A82E900161151 /* keys */ = {
 			isa = PBXGroup;
 			children = (
+				55F3FB12249BF61100161151 /* ShorelineExtension.swift */,
+				55F3FB14249C01C900161151 /* FactoryExtension.swift */,
 			);
 			path = keys;
 			sourceTree = "<group>";
@@ -232,10 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F3FA9A248FF57700161151 /* TarkovKeybarTableViewController.swift in Sources */,
-				55F3FB0E249A721D00161151 /* KeyInformation.swift in Sources */,
+				55F3FB0E249A721D00161151 /* KeyModel.swift in Sources */,
 				55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */,
 				55F3FAEF2491657600161151 /* LocationTableVeiwCell.swift in Sources */,
+				55F3FB13249BF61100161151 /* ShorelineExtension.swift in Sources */,
 				55F3FAA0248FF57700161151 /* TarkovKeybar.xcdatamodeld in Sources */,
+				55F3FB15249C01C900161151 /* FactoryExtension.swift in Sources */,
 				55F3FB0A2499201300161151 /* KeyTableViewCell.swift in Sources */,
 				55F3FB0824991E3400161151 /* KeyInformationViewController.swift in Sources */,
 				55F3FAF12491688A00161151 /* Location.swift in Sources */,

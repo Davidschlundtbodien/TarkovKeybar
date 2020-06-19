@@ -17,8 +17,8 @@ class LocationKeysTableViewController: UITableViewController {
             switch location?.name {
             case "Shoreline":
                 keys = Key.fetchShorelineKeys()
-//            case "Factory":
-//                keys = Key.fetchFactoryKeys()
+            case "Factory":
+                keys = Key.fetchFactoryKeys()
             default:
                 print("No Keys Error")
             }
