@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5533431C24A12A9F00863742 /* CustomsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533431B24A12A9F00863742 /* CustomsExtension.swift */; };
+		5533431E24A1492F00863742 /* WoodsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533431D24A1492F00863742 /* WoodsExtension.swift */; };
 		55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA95248FF57700161151 /* AppDelegate.swift */; };
 		55F3FA98248FF57700161151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA97248FF57700161151 /* SceneDelegate.swift */; };
 		55F3FA9A248FF57700161151 /* TarkovKeybarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA99248FF57700161151 /* TarkovKeybarTableViewController.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5533431B24A12A9F00863742 /* CustomsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsExtension.swift; sourceTree = "<group>"; };
+		5533431D24A1492F00863742 /* WoodsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodsExtension.swift; sourceTree = "<group>"; };
 		55F3FA92248FF57700161151 /* TarkovKeybar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarkovKeybar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F3FA95248FF57700161151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F3FA97248FF57700161151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			children = (
 				55F3FB12249BF61100161151 /* ShorelineExtension.swift */,
 				55F3FB14249C01C900161151 /* FactoryExtension.swift */,
+				5533431B24A12A9F00863742 /* CustomsExtension.swift */,
+				5533431D24A1492F00863742 /* WoodsExtension.swift */,
 			);
 			path = keys;
 			sourceTree = "<group>";
@@ -237,12 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5533431E24A1492F00863742 /* WoodsExtension.swift in Sources */,
 				55F3FA9A248FF57700161151 /* TarkovKeybarTableViewController.swift in Sources */,
 				55F3FB0E249A721D00161151 /* KeyModel.swift in Sources */,
 				55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */,
 				55F3FAEF2491657600161151 /* LocationTableVeiwCell.swift in Sources */,
 				55F3FB13249BF61100161151 /* ShorelineExtension.swift in Sources */,
 				55F3FAA0248FF57700161151 /* TarkovKeybar.xcdatamodeld in Sources */,
+				5533431C24A12A9F00863742 /* CustomsExtension.swift in Sources */,
 				55F3FB15249C01C900161151 /* FactoryExtension.swift in Sources */,
 				55F3FB0A2499201300161151 /* KeyTableViewCell.swift in Sources */,
 				55F3FB0824991E3400161151 /* KeyInformationViewController.swift in Sources */,

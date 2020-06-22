@@ -19,6 +19,10 @@ class LocationKeysTableViewController: UITableViewController {
                 keys = Key.fetchShorelineKeys()
             case "Factory":
                 keys = Key.fetchFactoryKeys()
+            case "Customs":
+                keys = Key.fetchCustomsKeys()
+            case "Woods":
+                keys = Key.fetchWoodsKeys()
             default:
                 print("No Keys Error")
             }
