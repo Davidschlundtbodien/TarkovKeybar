@@ -23,6 +23,8 @@ class LocationKeysTableViewController: UITableViewController {
                 keys = Key.fetchCustomsKeys()
             case "Woods":
                 keys = Key.fetchWoodsKeys()
+            case "Interchange":
+                keys = Key.fetchInterchangeKeys()
             default:
                 print("No Keys Error")
             }
