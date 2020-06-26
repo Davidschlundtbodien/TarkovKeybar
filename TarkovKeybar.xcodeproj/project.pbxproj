@@ -11,6 +11,7 @@
 		5533431E24A1492F00863742 /* WoodsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533431D24A1492F00863742 /* WoodsExtension.swift */; };
 		5533432024A3C04F00863742 /* InterchangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533431F24A3C04F00863742 /* InterchangeExtension.swift */; };
 		5533432224A5341100863742 /* LabsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533432124A5341100863742 /* LabsExtension.swift */; };
+		5533432424A65A4D00863742 /* ReserveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533432324A65A4D00863742 /* ReserveExtension.swift */; };
 		55F3FA96248FF57700161151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA95248FF57700161151 /* AppDelegate.swift */; };
 		55F3FA98248FF57700161151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA97248FF57700161151 /* SceneDelegate.swift */; };
 		55F3FA9A248FF57700161151 /* TarkovKeybarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3FA99248FF57700161151 /* TarkovKeybarTableViewController.swift */; };
@@ -41,6 +42,7 @@
 		5533431D24A1492F00863742 /* WoodsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodsExtension.swift; sourceTree = "<group>"; };
 		5533431F24A3C04F00863742 /* InterchangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterchangeExtension.swift; sourceTree = "<group>"; };
 		5533432124A5341100863742 /* LabsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsExtension.swift; sourceTree = "<group>"; };
+		5533432324A65A4D00863742 /* ReserveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveExtension.swift; sourceTree = "<group>"; };
 		55F3FA92248FF57700161151 /* TarkovKeybar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarkovKeybar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F3FA95248FF57700161151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F3FA97248FF57700161151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,9 +165,10 @@
 				55F3FB12249BF61100161151 /* ShorelineExtension.swift */,
 				55F3FB14249C01C900161151 /* FactoryExtension.swift */,
 				5533431B24A12A9F00863742 /* CustomsExtension.swift */,
-				5533431D24A1492F00863742 /* WoodsExtension.swift */,
 				5533431F24A3C04F00863742 /* InterchangeExtension.swift */,
+				5533431D24A1492F00863742 /* WoodsExtension.swift */,
 				5533432124A5341100863742 /* LabsExtension.swift */,
+				5533432324A65A4D00863742 /* ReserveExtension.swift */,
 			);
 			path = keys;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				55F3FB0A2499201300161151 /* KeyTableViewCell.swift in Sources */,
 				55F3FB0824991E3400161151 /* KeyInformationViewController.swift in Sources */,
 				55F3FAF12491688A00161151 /* Location.swift in Sources */,
+				5533432424A65A4D00863742 /* ReserveExtension.swift in Sources */,
 				5533432024A3C04F00863742 /* InterchangeExtension.swift in Sources */,
 				5533432224A5341100863742 /* LabsExtension.swift in Sources */,
 				55F3FA98248FF57700161151 /* SceneDelegate.swift in Sources */,
