@@ -19,7 +19,9 @@ struct Location {
         let woods = Location(name: "Woods")
         let labs = Location(name: "Labs")
         let reserve = Location(name: "Reserve")
+        let miscKeys = Location(name: "Misc Keys")
         
-        return [shoreline, factory, customs, interchange, woods, labs, reserve]
+        
+        return [shoreline, factory, customs, interchange, woods, labs, reserve, miscKeys]
     }
 }

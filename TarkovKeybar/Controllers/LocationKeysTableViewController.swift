@@ -29,6 +29,8 @@ class LocationKeysTableViewController: UITableViewController {
                 keys = Key.fetchLabsKeys()
             case "Reserve":
                 keys = Key.fetchReserveKeys()
+            case "Misc Keys":
+                keys = Key.fetchMiscKeys()
             default:
                 print("No Keys Error")
             }
