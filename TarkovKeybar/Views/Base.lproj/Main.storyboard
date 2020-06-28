@@ -102,7 +102,7 @@
         <scene sceneID="i3c-dm-6bF">
             <objects>
                 <tableViewController id="oqH-hZ-pfL" userLabel="Location Keys Table View Controller" customClass="LocationKeysTableViewController" customModule="TarkovKeybar" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ep-Ih-YUO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ep-Ih-YUO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,18 +110,18 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="KeyCell" rowHeight="101" id="YQR-D1-H2e" customClass="KeyTableViewCell" customModule="TarkovKeybar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YQR-D1-H2e" id="P2x-zG-mM7">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YQR-D1-H2e" id="P2x-zG-mM7">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="center" verticalHuggingPriority="750" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="w3y-71-it6">
+                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="w3y-71-it6">
                                             <rect key="frame" x="40" y="4" width="334" height="93"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="San203icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yvz-rK-Dua">
-                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="93"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="San203icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yvz-rK-Dua">
+                                                    <rect key="frame" x="0.0" y="0.0" width="53.5" height="93"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="West wing room 203 key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lWD-xE-gC8">
-                                                    <rect key="frame" x="167" y="0.0" width="167" height="93"/>
+                                                    <rect key="frame" x="53.5" y="0.0" width="280.5" height="93"/>
                                                     <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="20"/>
                                                     <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -176,7 +176,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="San203icon" translatesAutoresizingMaskIntoConstraints="NO" id="VIq-7r-7h9">
                                                 <rect key="frame" x="0.0" y="0.5" width="159.5" height="64"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West wing room 203 key" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11v-gG-xCm">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West wing room 203 key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11v-gG-xCm">
                                                 <rect key="frame" x="187.5" y="10.5" width="159.5" height="44.5"/>
                                                 <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="20"/>
                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -199,7 +199,7 @@
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key to room 203 in the West wing of the health resort" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbP-Ca-YKP">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key to room 203 in the West wing of the health resort" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbP-Ca-YKP">
                                                                 <rect key="frame" x="40.5" y="42.5" width="293.5" height="35.5"/>
                                                                 <fontDescription key="fontDescription" name="Bender-LightItalic" family="Bender" pointSize="16"/>
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -211,7 +211,7 @@
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The second floor, room 203 of the West Wing in the Health Resort on Shoreline." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1C-v8-6hi">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The second floor, room 203 of the West Wing in the Health Resort on Shoreline." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1C-v8-6hi">
                                                                 <rect key="frame" x="2.5" y="140.5" width="369.5" height="35.5"/>
                                                                 <fontDescription key="fontDescription" name="Bender-Light" family="Bender" pointSize="16"/>
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,7 +223,7 @@
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shs-hN-18z">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shs-hN-18z">
                                                                 <rect key="frame" x="0.0" y="238.5" width="374" height="70.5"/>
                                                                 <string key="text">In the house closest to the bus stop in the Village. Walk through the door and it's on the chair beneath the Jackets. There is a spawn point just on the other side of the fence.</string>
                                                                 <fontDescription key="fontDescription" name="Bender-Light" family="Bender" pointSize="16"/>
@@ -256,7 +256,7 @@ One Sport bag</string>
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NONE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-sM-kX0">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NONE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-sM-kX0">
                                                                 <rect key="frame" x="168" y="575" width="38.5" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Bender-Light" family="Bender" pointSize="16"/>
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,7 +268,7 @@ One Sport bag</string>
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Connected to room 205 through the balcony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMe-uQ-6qu">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected to room 205 through the balcony" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMe-uQ-6qu">
                                                                 <rect key="frame" x="29.5" y="655.5" width="315" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Bender-Light" family="Bender" pointSize="16"/>
                                                                 <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
