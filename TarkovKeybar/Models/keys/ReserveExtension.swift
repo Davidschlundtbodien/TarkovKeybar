@@ -70,6 +70,11 @@ extension Key {
         
         let rbPS82 = Key(name: "RB-PS82 key", image: "RBPS82icon", keyDescription: "Military base key", keyOpens: "This key opens the north-east caged off storage area in the Underground Storage Bunkers on Reserve . There is one unlockable door at the north and south end of the closed caged room.", keyFound: "In the Common fund stash (Shturman's crate)\nIn Jackets\nPockets and bags of Scavs", keyLoot: "Three Medical supply crates\nOne Technical supply crate", keyQuest: "NONE", keyComments: "NONE")
         
+        let rbRLSSA = Key(name: "RB-RLSSA key", image: "Keybaricon", keyDescription: "Military base key", keyOpens: "Queen building (dome) on Reserve. East end of the building on the 2nd floor.", keyFound: "In Jackets\nPockets and bags of Scavs", keyLoot: "Loose loot (Weapon mods, Ammunition)\nThree Drawers\nOne Folder with intelligence", keyQuest: "NONE", keyComments: "NONE")
+        
+        let rbPKPM = Key(name: "RB-PKPM key", image: "Keybaricon", keyDescription: "Military base key", keyOpens: "The Marked room next in the office connected to the D-2 Extract Switch.", keyFound: "In Jackets\nPockets and bags of Scavs", keyLoot: "Rare Loose Loot\nMultiple Weapon spawns\nPossible spawn of certain Containers", keyQuest: "NONE", keyComments: "Key has 25 uses")
+        
+        
         
         
         
@@ -104,6 +109,8 @@ extension Key {
         keys.append(rbPSP2)
         keys.append(rbPS81)
         keys.append(rbPS82)
+        keys.append(rbRLSSA)
+        keys.append(rbPKPM)
         
         return keys
     }
