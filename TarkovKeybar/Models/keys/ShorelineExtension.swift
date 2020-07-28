@@ -105,6 +105,8 @@ extension Key {
         
         let hepStorage = Key(name: "Key to HEP station storage", image: "Hepskeyicon", keyDescription: "Key to Hydroelectric power station's storage on Shoreline", keyOpens: "The room on 2nd floor of power station on Shoreline.", keyFound: "Pockets and bags of Scavs\nCan be obtained as a quest reward from the quest Nostalgia", keyLoot: "- One Weapon box\n- One Weapon box (4x4)\n- One Weapon box (6x3)\n- One Folder with intelligence spawn on the small wooden desk in the corner\n- Loose Weapon mods", keyQuest: "NONE", keyComments: "NONE")
         
+        let keyWithTape = Key(name: "Key with tape", image: "KeyWithTapeicon", keyDescription: "A key marked with blue duct tape.", keyOpens: "The first floor, room 110 of the East Wing in the Health Resort on Shoreline.", keyFound: "In Jackets\nPockets and bags of Scavs\n\nOn Sanitar (Shoreline Scav Boss)", keyLoot: "Sport bag\n- Loose loot\n- LEDX Spawns", keyQuest: "This is a location for the quest The chemistry closet", keyComments: "NONE")
+        
         
         //West wing keys
         keys.append(west203)
@@ -155,6 +157,7 @@ extension Key {
         keys.append(utilityRoom)
         keys.append(manageSafe)
         keys.append(hepStorage)
+        keys.append(keyWithTape)
         
         return keys
     }

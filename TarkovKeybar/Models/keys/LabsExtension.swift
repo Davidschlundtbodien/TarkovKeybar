@@ -32,6 +32,9 @@ extension Key {
         
         let testArea = Key(name: "Lab. key. Testing area (weap.)", image: "TestAreaicon", keyDescription: "Room access Key", keyOpens: "Laboratory weapon testing area (O11) on the first level in The Lab.", keyFound: "In Jackets\nPockets and bags of Scavs\n\nLABS\n- On the first level in room R15 (Gym) on a stool\n- On the second level in room B21 (above the Server Room - B12) on the kitchen counter\n- On the bottom of a shelf left of the entrance to room R23", keyLoot: "- One Weapon box (4x4)\n- One Weapon box (5x5)\n- Weapon spawns\n- Loose Loot (Weapon attachments and Ammunition)", keyQuest: "NONE", keyComments: "- Can unlock two separate doors leading to the same room.")
         
+        let keycardWithBlueMarking = Key(name: "Key card with a blue marking", image: "DuctTapeKeycardicon", keyDescription: "A single-use plastic key card marked with blue color marking for identification.", keyOpens: "The door just in front of the Laboratory block (G22) on the second level", keyFound: "On Sanitar", keyLoot: "- Loose medical loot\n- Stimulators", keyQuest: "NONE", keyComments: "This key has one use")
+        
+        
         keys.append(accessCard)
         keys.append(redKC)
         keys.append(blueKC)
@@ -42,6 +45,7 @@ extension Key {
         keys.append(arsenalStorage)
         keys.append(manager)
         keys.append(testArea)
+        keys.append(keycardWithBlueMarking)
         
         return keys
     }
