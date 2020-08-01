@@ -29,14 +29,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-y8-b13">
                                 <rect key="frame" x="80" y="144" width="254" height="618"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tarkov Keybar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIT-xo-usq">
-                                        <rect key="frame" x="78" y="0.0" width="98.5" height="180"/>
-                                        <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tarkov Keybar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIT-xo-usq">
+                                        <rect key="frame" x="69.5" y="0.0" width="115" height="180"/>
+                                        <fontDescription key="fontDescription" name="Bender-Bold" family="Bender" pointSize="35"/>
                                         <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Escape From Tarkov key app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-Y2-BMl">
-                                        <rect key="frame" x="5.5" y="380" width="243.5" height="19"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Escape From Tarkov Key App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-Y2-BMl">
+                                        <rect key="frame" x="5" y="380" width="244.5" height="19"/>
                                         <fontDescription key="fontDescription" name="Bender-Italic" family="Bender" pointSize="17"/>
                                         <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

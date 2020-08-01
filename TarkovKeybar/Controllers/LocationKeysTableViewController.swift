@@ -32,7 +32,7 @@ class LocationKeysTableViewController: UITableViewController {
             case "Misc Keys":
                 keys = Key.fetchMiscKeys()
             default:
-                print("No Keys Error")
+                print("No Keys for this location")
             }
         }
     }
